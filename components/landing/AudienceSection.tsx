@@ -7,7 +7,7 @@ export function AudienceSection() {
   return (
     <section
       id="para-quien"
-      className="border-y border-[#484848]/20 bg-[#000000] py-20 sm:py-24"
+      className="border-y border-[#d8d1d1]/20 bg-white py-20 sm:py-24"
     >
       <Container className="space-y-10">
         <div data-reveal>
@@ -25,13 +25,13 @@ export function AudienceSection() {
               key={profile.title}
               data-reveal
               data-reveal-delay={String(90 + index * 70)}
-              className="border border-[#484848]/25 bg-[#191919] p-7 text-center fx-card"
+              className="border border-[#d8d1d1]/25 bg-white p-7 text-center fx-card"
             >
-              <div className="mx-auto mb-4 h-1 w-12 bg-[#84adff]" />
-              <h3 className="font-display text-2xl font-bold uppercase leading-none tracking-tight text-white">
+              <div className="mx-auto mb-4 h-1 w-12 bg-[#d61f2c]" />
+              <h3 className="font-display text-2xl font-bold uppercase leading-none tracking-tight text-[#111111]">
                 {profile.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-[#ababab]">
+              <p className="mt-3 text-sm leading-relaxed text-[#5f5f5f]">
                 {profile.description}
               </p>
             </article>

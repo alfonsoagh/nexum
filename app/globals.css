@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0e0e0e;
-  --foreground: #ffffff;
-  --surface: #191919;
-  --muted: #ababab;
-  --border: #484848;
-  --accent: #84adff;
-  --accent-dim: #6c9fff;
+  --background: #ffffff;
+  --foreground: #111111;
+  --surface: #faf6f6;
+  --muted: #5f5f5f;
+  --border: #d8d1d1;
+  --accent: #d61f2c;
+  --accent-dim: #f04a57;
 }
 
 @theme inline {
@@ -40,14 +40,14 @@ html {
 }
 
 ::selection {
-  background: rgba(132, 173, 255, 0.4);
+  background: rgba(214, 31, 44, 0.38);
   color: #ffffff;
 }
 
 .tech-grid {
   background-image:
-    linear-gradient(rgba(171, 171, 171, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(171, 171, 171, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(214, 31, 44, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 31, 44, 0.08) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -103,8 +103,8 @@ html {
 .fx-card:hover,
 .fx-card:focus-within {
   transform: translateY(-6px);
-  border-color: rgba(132, 173, 255, 0.55);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.32);
+  border-color: rgba(214, 31, 44, 0.55);
+  box-shadow: 0 18px 40px rgba(17, 17, 17, 0.08);
 }
 
 .fx-float-slow {
