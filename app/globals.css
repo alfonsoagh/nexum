@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0e0e0e;
+  --foreground: #ffffff;
+  --surface: #191919;
+  --muted: #ababab;
+  --border: #484848;
+  --accent: #84adff;
+  --accent-dim: #6c9fff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(132, 173, 255, 0.4);
+  color: #ffffff;
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(171, 171, 171, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(171, 171, 171, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@keyframes fxFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fxScan {
+  0% {
+    transform: translate3d(-35%, -12%, 0);
+  }
+  50% {
+    transform: translate3d(22%, 8%, 0);
+  }
+  100% {
+    transform: translate3d(70%, 24%, 0);
+  }
+}
+
+[data-reveal] {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translate3d(0, 24px, 0) scale(0.99);
+  transition:
+    opacity 0.75s cubic-bezier(0.2, 0.9, 0.2, 1),
+    transform 0.75s cubic-bezier(0.2, 0.9, 0.2, 1),
+    filter 0.75s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.fx-card {
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.9, 0.2, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.fx-card:hover,
+.fx-card:focus-within {
+  transform: translateY(-6px);
+  border-color: rgba(132, 173, 255, 0.55);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.32);
+}
+
+.fx-float-slow {
+  animation: fxFloat 9s ease-in-out infinite;
+}
+
+.fx-float-slower {
+  animation: fxFloat 12s ease-in-out infinite reverse;
+}
+
+.fx-scan {
+  animation: fxScan 10s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+
+  .fx-card,
+  .fx-float-slow,
+  .fx-float-slower,
+  .fx-scan {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+}
