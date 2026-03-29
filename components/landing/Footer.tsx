@@ -18,13 +18,13 @@ export function Footer() {
           <div className="mt-6 flex flex-wrap gap-3 text-sm text-[#111111]">
             <a
               href="mailto:contacto@nexum.studio"
-              className="border border-[#d8d1d1]/40 px-4 py-2 transition-colors hover:border-[#d61f2c]"
+              className="border border-[#d8d1d1]/40 px-4 py-2 transition-colors hover:border-[#1e4fa6] focus-visible:border-[#173c80]"
             >
               contacto@nexum.studio
             </a>
             <a
               href="https://wa.me/525500000000"
-              className="border border-[#d8d1d1]/40 px-4 py-2 transition-colors hover:border-[#d61f2c]"
+              className="border border-[#d8d1d1]/40 px-4 py-2 transition-colors hover:border-[#1e4fa6] focus-visible:border-[#173c80]"
             >
               +52 55 0000 0000
             </a>
@@ -41,7 +41,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="transition-colors hover:text-[#d61f2c]"
+                    className="transition-colors hover:text-[#1e4fa6] focus-visible:text-[#173c80]"
                   >
                     {item.label}
                   </Link>
@@ -60,7 +60,7 @@ export function Footer() {
             </p>
             <Link
               href="#contacto"
-              className="mt-4 inline-flex border border-[#f04a57] bg-[#d61f2c] px-4 py-2 font-display text-sm font-bold uppercase tracking-tight text-white transition-colors hover:bg-[#e33543]"
+              className="mt-4 inline-flex border border-[#6f90d6] bg-[#1e4fa6] px-4 py-2 font-display text-sm font-bold uppercase tracking-tight text-white transition-colors hover:bg-[#295fc2] focus-visible:outline-[#173c80]"
             >
               Iniciar conversación
             </Link>

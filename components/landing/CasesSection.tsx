@@ -23,7 +23,7 @@ export function CasesSection() {
               data-reveal-delay={String(90 + index * 70)}
               className="flex h-full flex-col border border-[#d8d1d1]/25 bg-white p-6 fx-card"
             >
-              <div className="mb-6 h-1 w-12 bg-[#d61f2c]" />
+              <div className="mb-6 h-1 w-12 bg-[#1e4fa6]" />
               <h3 className="font-display text-2xl font-black uppercase leading-none tracking-tight text-[#111111]">
                 {caseStudy.name}
               </h3>
@@ -48,7 +48,7 @@ export function CasesSection() {
                   <dt className="font-display text-[0.65rem] font-bold uppercase tracking-[0.15em] text-[#111111]">
                     Resultado
                   </dt>
-                  <dd className="mt-1 border-l-2 border-[#d61f2c] bg-[#d61f2c]/10 px-3 py-2 text-sm leading-relaxed text-[#d61f2c]">
+                  <dd className="mt-1 border-l-2 border-[#1e4fa6] bg-[#1e4fa6]/10 px-3 py-2 text-sm leading-relaxed text-[#1e4fa6]">
                     {caseStudy.result}
                   </dd>
                 </div>

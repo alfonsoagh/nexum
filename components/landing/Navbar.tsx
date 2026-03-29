@@ -15,7 +15,7 @@ export function Navbar() {
             className="font-display text-2xl font-black uppercase tracking-tight text-[#111111] sm:text-[1.75rem]"
             aria-label={`Ir al inicio de ${brand.name}`}
           >
-            {brand.name}.tech
+            {brand.name} tech
           </Link>
 
           <nav className="hidden items-center gap-7 md:flex" aria-label="Navegación">
@@ -23,7 +23,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-display text-sm font-bold uppercase tracking-tight text-[#5f5f5f] transition-colors duration-200 hover:text-[#d61f2c] focus-visible:text-[#d61f2c] focus-visible:outline-none"
+                className="font-display text-sm font-bold uppercase tracking-tight text-[#5f5f5f] transition-colors duration-200 hover:text-[#1e4fa6] focus-visible:text-[#173c80]"
               >
                 {item.label}
               </Link>
@@ -41,7 +41,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="shrink-0 font-display text-xs font-bold uppercase tracking-tight text-[#5f5f5f] transition-colors duration-200 hover:text-[#d61f2c] focus-visible:text-[#d61f2c] focus-visible:outline-none"
+              className="shrink-0 font-display text-xs font-bold uppercase tracking-tight text-[#5f5f5f] transition-colors duration-200 hover:text-[#1e4fa6] focus-visible:text-[#173c80]"
             >
               {item.label}
             </Link>

@@ -22,7 +22,7 @@ export function PricingSection() {
               <h3 className="font-display text-3xl uppercase leading-none tracking-[0.04em] text-[#111111]">
                 {price.name}
               </h3>
-              <p className="mt-3 font-display text-4xl uppercase leading-none text-[#ff6b76]">
+              <p className="mt-3 font-display text-4xl uppercase leading-none text-[#6f90d6]">
                 Desde {price.startingPrice}
               </p>
               <p className="mt-3 border-t border-[#d8d1d1] pt-3 text-sm text-[#5f5f5f]">
@@ -32,7 +32,7 @@ export function PricingSection() {
           ))}
         </div>
 
-        <p className="border border-[#f3c1c6] bg-[#fff4f5] px-4 py-3 text-sm text-[#8f202b]">
+        <p className="border border-[#c7d8fb] bg-[#f4f8ff] px-4 py-3 text-sm text-[#173c80]">
           Nota: los precios pueden variar dependiendo de complejidad,
           funcionalidades requeridas, integraciones externas y tiempos de
           entrega.

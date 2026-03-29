@@ -27,7 +27,7 @@ export function AudienceSection() {
               data-reveal-delay={String(90 + index * 70)}
               className="border border-[#d8d1d1]/25 bg-white p-7 text-center fx-card"
             >
-              <div className="mx-auto mb-4 h-1 w-12 bg-[#d61f2c]" />
+              <div className="mx-auto mb-4 h-1 w-12 bg-[#1e4fa6]" />
               <h3 className="font-display text-2xl font-bold uppercase leading-none tracking-tight text-[#111111]">
                 {profile.title}
               </h3>

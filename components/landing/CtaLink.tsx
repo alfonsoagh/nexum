@@ -8,9 +8,9 @@ type CtaLinkProps = {
 
 const variantStyles = {
   primary:
-    "border border-[#f04a57] bg-[#d61f2c] text-white hover:bg-[#e33543] focus-visible:outline-[#ff9aa3]",
+    "border border-[#6f90d6] bg-[#1e4fa6] text-white hover:bg-[#295fc2] focus-visible:outline-[#173c80]",
   ghost:
-    "border border-[#111111] bg-white text-[#111111] hover:border-[#d61f2c] hover:bg-[#fff5f6] hover:text-[#d61f2c] focus-visible:outline-[#ff9aa3]",
+    "border border-[#111111] bg-white text-[#111111] hover:border-[#1e4fa6] hover:bg-[#f4f8ff] hover:text-[#1e4fa6] focus-visible:outline-[#173c80]",
 } as const;
 
 export function CtaLink({ href, label, variant = "primary" }: CtaLinkProps) {
