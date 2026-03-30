@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export function MotionOrchestrator() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const nodes = document.querySelectorAll<HTMLElement>("[data-reveal]");
     if (!nodes.length) return;
@@ -31,13 +34,14 @@ export function MotionOrchestrator() {
     );
 
     nodes.forEach((node, index) => {
+      node.classList.remove("is-visible");
       const delay = Number(node.dataset.revealDelay ?? index * 35);
       node.style.setProperty("--reveal-delay", `${Math.min(delay, 420)}ms`);
       observer.observe(node);
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   return null;
 }

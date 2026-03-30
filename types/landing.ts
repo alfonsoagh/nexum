@@ -1,5 +1,11 @@
 export type NavigationItem = {
-  href: `#${string}`;
+  href: string;
+  label: string;
+};
+
+export type PortfolioNavigationItem = {
+  description: string;
+  href: string;
   label: string;
 };
 

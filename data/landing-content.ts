@@ -4,6 +4,7 @@ import type {
   CaseStudy,
   HeroMetric,
   NavigationItem,
+  PortfolioNavigationItem,
   PriceReference,
   ServiceGroup,
 } from "@/types/landing";
@@ -16,11 +17,24 @@ export const brand = {
 };
 
 export const navigationItems: NavigationItem[] = [
-  { href: "#beneficios", label: "Beneficios" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#para-quien", label: "¿Para quién?" },
-  { href: "#casos", label: "Casos" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#beneficios", label: "Beneficios" },
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#para-quien", label: "¿Para quién?" },
+  { href: "/#casos", label: "Casos" },
+  { href: "/#contacto", label: "Contacto" },
+];
+
+export const portfolioNavigationItems: PortfolioNavigationItem[] = [
+  {
+    description: "React, Node, APIs, dashboards y productos operativos.",
+    href: "/software",
+    label: "Ingeniería de software",
+  },
+  {
+    description: "Branding, fotografía, dirección visual y sistemas de marca.",
+    href: "/diseno",
+    label: "Diseño digital",
+  },
 ];
 
 export const heroMetrics: HeroMetric[] = [
