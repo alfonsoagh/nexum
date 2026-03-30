@@ -49,6 +49,7 @@ h4 {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6.75rem;
 }
 
 ::selection {
@@ -129,6 +130,21 @@ html {
 
 .fx-scan {
   animation: fxScan 10s ease-in-out infinite;
+}
+
+@keyframes routeEnter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.route-enter {
+  animation: routeEnter 0.55s cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {

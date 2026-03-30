@@ -50,7 +50,7 @@ export function HeroSection() {
             className="flex flex-col gap-3 sm:flex-row sm:items-center"
           >
             <CtaLink href="#contacto" label="Cotizar mi Proyecto" />
-            <CtaLink href="#casos" label="Ver Portafolio" variant="ghost" />
+            <CtaLink href="#portafolio" label="Explorar Portafolio" variant="ghost" />
           </div>
 
           <div className="grid gap-3 sm:grid-cols-3">
